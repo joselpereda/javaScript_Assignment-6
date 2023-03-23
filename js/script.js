@@ -39,7 +39,7 @@ empForm.addEventListener('submit', (e) => {
 
     // CREATE THE DELETE BUTTON
     let deleteBtn   = document.createElement('button');
-    // REFERENCED EXAMPLE CREATED BY ZAK
+    // REFERENCED EXAMPLE PRESENTED BY ZAK
     deleteBtn.className = 'btn btn-sm btn-danger delete';
     deleteBtn.appendChild(document.createTextNode('X'));
     cellDelete.appendChild(deleteBtn);
@@ -57,7 +57,7 @@ empForm.addEventListener('submit', (e) => {
 
 // DELETE EMPLOYEE
 empTable.addEventListener('click', (e) => {
-    // REFERENCED EXAMPLE CREATED BY ZAK
+    // REFERENCED EXAMPLE PRESENTED BY ZAK
     if (e.target.classList.contains('delete')) {
         if (confirm('Are you sure you want to delete this employee?')) {
             empTable.deleteRow(e.target.parentElement.parentElement.rowIndex);
